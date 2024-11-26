@@ -1,0 +1,350 @@
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+  
+  
+   
+.navbar {
+    padding: 10px 20px;
+  }
+  
+  .nav-list {
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+    gap: 20px;
+  }
+  
+  .nav-list li {
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px 15px;
+    border: 1px solid #333;  
+    border-radius: 5px; 
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;  
+  }
+  
+  .nav-list li:hover {
+    background-color: #f0f0f0;  
+    color: #000;  
+  }
+  
+  
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Columns */
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  h1{
+    font-size: 42px;
+}
+
+ 
+
+.bt{
+    border-radius: 12px;
+    width: 150px;
+    height: 50px;
+}
+
+.b1{
+    width: 350px;
+    height: 40px;
+    border-radius: 12px;
+    font-size: 25px;
+    font-weight: bold;
+}
+  
+  /* Profile Section */
+  .profile-section {
+    text-align: center;
+  }
+  
+  .round-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    border: 2px solid #ddd;
+  }
+  
+  /* Calendar Section */
+  .calendar-section {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .calendar-table {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  
+  .calendar-table th,
+  .calendar-table td {
+    border: 1px solid #333; /* Table border */
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .calendar-table th {
+    background-color: #f0f0f0; /* Light gray for headers */
+    font-weight: bold;
+  }
+  
+  .calendar-table td {
+    background-color: #fff;
+  }
+  
+  .calendar-table td:hover {
+    background-color: #f0f0f0; /* Highlight the cell on hover */
+    cursor: pointer;
+  }
+  
+  /* Cards */
+  .card {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .card.image-center img {
+    width: 120px;           
+    height: 120px;           
+    border-radius: 50%;     
+    object-fit: cover;     
+    display: block;        
+    margin: 0 auto;         
+  }
+  
+  
+  .card.image-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .card.image-left img {
+    width: 50%;               
+    height: 50%;               
+    border-radius: 50%;       
+    object-fit: cover;        
+    display: block;            
+    margin: 0 auto;           
+  }
+  
+   
+  .student-credentials {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: start;
+  }
+  
+  .student-credentials h1 {
+    font-size: 44px;
+    margin-bottom: 10px;
+  }
+.buttons{
+    justify-content: space-between;
+
+  }
+  
+  .student-credentials p {
+    color: #666;
+    font-size: 14px;
+  }
+   
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 200px;
+  }
+  
+ .student-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.student-card .card-header img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.student-card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.student-card h3 {
+  margin: 0 0 5px;
+  font-size: 16px;
+}
+
+.student-card p {
+  margin: 2px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+   
+   
+  /* Novelist Section */
+  .novelist-section {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .novelist-section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .novelist-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .novelist-section ul li {
+    padding: 5px 0;
+    font-size: 14px;
+    color: #555;
+  }
+  
+   
+  .card.no-image {
+    background: #eaeaea;
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .bullet-body {
+   
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 70px;
+}
+  .bullet-body hr {
+    opacity: 10%;
+     
+}
+
+.buttn {
+    display: flex;
+    justify-content: space-evenly;
+    /* margin-bottom: 5px; */
+}
+
+button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;  
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+ 
+
+.task {
+   
+    padding: 26px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 15x 45px;
+}
+.details {
+   
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 15x 45px;
+}
+
+.longcard {
+  background: #fff;
+  padding: 28px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+.longcard img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.longcard img {
+  width: 100px;           
+  height: 100px;           
+  border-radius: 50%;     
+  object-fit: cover;     
+  display: block;        
+  margin: 0 auto;         
+}
